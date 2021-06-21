@@ -1,0 +1,100 @@
+/*import font for the header*/
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+html {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0),
+      rgba(61, 80, 133, 0.85)
+    ),
+    url(https://kleinconstruction.net/wp-content/uploads/2019/11/XSports2_9-scaled.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*main set up*/
+main {
+  width: 100%;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+#survey-form label,
+p {
+  color: white;
+}
+/*@media form fom to fit in devices*/
+@media (min-width: 568px) {
+  main {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  main {
+    max-width: 650px;
+  }
+}
+@media (min-height: 1024px) {
+  main {
+    max-width: 800px;
+    height: 1350px;
+  }
+}
+/*header*/
+#title,
+#description {
+  font-family: "Sigmar One", serif;
+  color: black;
+  font-weight: bold;
+}
+/*form*/
+form {
+  padding: 15px 50px;
+  background: rgba(0, 0, 139, 0.7);
+  border: 5px solid;
+  border-radius: 20px;
+  text-align: left;
+}
+/*label setup to align*/
+label {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.form-control,
+.form-user {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+/*comment section*/
+textarea {
+  min-height: 100px;
+  width: 95%;
+  padding: 10px;
+  border: 5px solid;
+}
+#comments {
+  max-width: 100%;
+  border: 3px solid;
+}
+/*button*/
+button {
+  background-color: #39883b;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 99%;
+  align-items: center;
+}

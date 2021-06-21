@@ -1,0 +1,186 @@
+<!-- This is a survey form made by me. Xsport Gym did not approved or asked me to make.
+Finished 6-20-2021-->
+<!-- This is for code academy-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Survey form by Roberto Castaneda" />
+    <title>Gym Survey Xsport</title>
+    <!--Links for fonts-->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Website code starts here-->
+    <main>
+      <!-- heading of the webpage starts here-->
+      <h1 id="title">Xsport Gym Survey Form</h1>
+      <p id="description">Thank you for helping us to improve your workouts</p>
+      <!--end of heading-->
+      <!--form starts here-->
+      <form id="survey-form">
+        <!--user information code starts here-->
+        <div class="formsection">
+          <!-- Name input-->
+          <label id="name-label" for="name">Full Name: </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+            class="form-user"
+          />
+        </div>
+
+        <div class="formsection">
+          <!-- Email input-->
+          <label id="email-label" for="email">Email: </label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            id="email"
+            class="form-user"
+            required
+            pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}"
+          />
+        </div>
+
+        <div class="formsection">
+          <!-- Age input-->
+          <label id="number-label" for="number">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="16"
+            max="120"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <!--user information code ends here-->
+        <!-- user survey info starts here-->
+        <div class="formsection">
+          <p>Which gym freak best describes you?</p>
+          <!-- dropdown section-->
+          <select name="gymfreak" id="dropdown" class="form-user">
+            <option selected disabled value="default">Choose one</option>
+            <option value="cardio">Cardio Freak</option>
+            <option value="weight">Weight Freak</option>
+            <option value="crossfit">CrossFit Freak</option>
+            <option value="mweight">Weight Machine Freak</option>
+            <option value="basketball">Basketball Athlete</option>
+            <option value="water">Swimmer/Spa</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <!-- radio button question starts here-->
+        <div class="formsection">
+          <p>Would you recommend Xsport to a family or friend?</p>
+          <!-- radiobutton section-->
+          <label>
+            <input
+              name="recommend"
+              value="yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="recommend"
+              value="no"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+        </div>
+        <!-- radio button question ends here-->
+        <!-- checkbox section-->
+        <div class="formsection">
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <label
+            ><input
+              name="prefer"
+              value="more-cleaner-lobby-equipment"
+              type="checkbox"
+              class="input-checkbox"
+            />More cleaner lobby/equipment</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="more-machine-equipment-heavier-weights"
+              type="checkbox"
+              class="input-checkbox"
+            />More machine equipment/Heavier weights</label
+          >
+          <label
+            ><input
+              name="suggestion"
+              value="more-access-to-premium-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />More access to premium rooms</label
+          >
+          <label
+            ><input
+              name="suggestion"
+              value="more-cardio-machines"
+              type="checkbox"
+              class="input-checkbox"
+            />More cardio machines</label
+          >
+          <label
+            ><input
+              name="suggestion"
+              value="more-events"
+              type="checkbox"
+              class="input-checkbox"
+            />More events</label
+          >
+          <label
+            ><input
+              name="suggestion"
+              value="Extend-our-gym-bigger"
+              type="checkbox"
+              class="input-checkbox"
+            />Extend our gym bigger</label
+          >
+        </div>
+        <!-- end of checkbox options-->
+        <!-- user survey info ends here-->
+
+        <!--Comment section starts here -->
+        <div class="formsection">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+          ></textarea>
+        </div>
+        <!--Comment section starts here -->
+        <!--button starts here -->
+        <div class="formsection">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+      <!--form ends here-->
+    </main>
+  </body>
+  <!--end of code-->
+</html>
